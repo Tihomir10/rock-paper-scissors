@@ -1,0 +1,45 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding: 10px;
+}
+
+.btn {
+  background-color: white;
+  font-family: Arial, sans-serif;
+
+}
+
+.container {
+  margin-top: -50px;
+}
+
+#rez {
+  margin-top: 150px;
+  text-align: center;
+  padding: 50px;
+  font-family: arial, sans serif;
+  color: beige;
+  font-size: 30px;
+}
+
+body {
+  background-image: url("/home/adnan/the_odin_project/rock-paper-scissors/rpc.jpg");
+}
+
+.btn {
+  background-color: transparent;
+  color: beige;
+  font-size: 27px;
+  font-family: arial, sans serif;
+  border: none;
+  outline: 0;
+}
+
+.btn:active, .btn:focus {
+  outline: 0;
+}

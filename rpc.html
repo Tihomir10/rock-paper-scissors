@@ -1,92 +1,21 @@
-<script>
-var playerSelection;
-var computerSelection;
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" type="text/css" href="/home/adnan/the_odin_project/rock-paper-scissors/style.css">
+</head>
+<body>
+  <div id="rez">
 
-function userPlay() {
-  var pro = prompt("Rock paper or scissors")
-  switch (pro) {
-    case "Rock":
-      playerSelection = "Rock";
-      break;
-    case "Paper":
-      playerSelection = "Paper";
-      break;
-    case "Scissors":
-      playerSelection = "Scissors";
-      break;
-  }
-}
+  </div>
+  <div class="container">
+      <ul>
+        <li><button class="btn" id="rock">Rock</button></li>
+        <li><button class="btn" id="paper">Paper</button></li>
+        <li><button class="btn" id="scissors">Scissors</button></li>
+    </ul>
+  </div>
+  <script type="text/javascript" src="/home/adnan/the_odin_project/rock-paper-scissors/main.js"></script>
+</body>
 
-function computerPlay() {
-  var array = ['Rock', 'Paper', 'Scissors'];
-  computerSelection = array[Math.floor(Math.random() * 3)]
-}
-
-function playRound() {
-  userPlay();
-  computerPlay();
-}
-
-var win = 0;
-var lose = 0;
-var text;
-
-
-function game() {
-  vic();
-  playRound();
-  console.log(playerSelection);
-  console.log(computerSelection);
-
-  if (playerSelection==="Rock" && computerSelection==="Paper") {
-    lose = ++lose
-    text = "Paper beats rock"
-    console.log(win + ":" + lose)
-    return text
-  } else if (playerSelection==="Rock" && computerSelection==="Scissors") {
-    win = ++win
-    text = "Rock beats scissors"
-    console.log(win + ":" + lose)
-    return text
-  } else if (playerSelection==="Paper" && computerSelection==="Rock") {
-    win = ++win
-    text = "Paper beats rock"
-    console.log(win + ":" + lose)
-    return text
-  } else if (playerSelection==="Paper" && computerSelection==="Scissors") {
-    lose = ++lose
-    text = "Scissors beat paper"
-    console.log(win + ":" + lose)
-    return text
-  } else if (playerSelection==="Scissors" && computerSelection==="Rock") {
-    lose = ++lose
-    text = "Rock beats scissors"
-    console.log(win + ":" + lose)
-    return text
-  } else if (playerSelection==="Scissors" && computerSelection==="Paper") {
-    win = ++win
-    text = "Scissors beat paper"
-    console.log(win + ":" + lose)
-    return text
-  } else {
-    text = "Its a tie"
-    return text
-  }
-
-}
-
-function vic() {
-  if (win === 5) {
-    prompt("You win, mate")
-    win = 0;
-  } else if (lose === 5) {
-    prompt("You lost, buddy")
-    lose = 0;
-  }
-}
-game()
-
-
-
-
-</script>
+</html>
