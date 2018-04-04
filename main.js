@@ -53,6 +53,7 @@ function computerPlay() {
   computerSelection = array[Math.floor(Math.random() * 3)]
 }
 
+
 function playRound() {
   userPlay();
   computerPlay();

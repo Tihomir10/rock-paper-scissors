@@ -19,7 +19,7 @@ li {
 }
 
 #rez {
-  margin-top: 150px;
+  margin-top:  150px;
   text-align: center;
   padding: 50px;
   font-family: arial, sans serif;
@@ -28,7 +28,7 @@ li {
 }
 
 body {
-  background-image: url("/home/adnan/the_odin_project/rock-paper-scissors/rpc.jpg");
+  background-image: url("https://github.com/Tihomir10/rock-paper-scissors/blob/master/rpc.jpg");
 }
 
 .btn {
